@@ -24,8 +24,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
    
     
     let apiKey = "d1580a5eaffdf2ae907ca97ceaff0235"
-    var lat = 36.8485
-    var lon = 174.7633
+    var lat = 36.111
+    var lon = 174.111
     var activityIndicator : NVActivityIndicatorView?
     let locationManage = CLLocationManager()
     
@@ -50,14 +50,15 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             locationManage.startUpdatingLocation()
         }
     }
-    func locationManage(manager:CLLocationManager!,didUpdateLocations locations:[AnyObject]!){
+    func locationManager(_ manager:CLLocationManager,didUpdateLocations locations:[CLLocation]){
         print("get location")
-        let location:CLLocation = locations[locations.count-1] as! CLLocation
+        let location:CLLocation = locations[0]
         if(location.horizontalAccuracy>0){
+            self.locationLabel.text = "Meeeo~"
             self.locationManage.stopUpdatingLocation()
             lat = location.coordinate.latitude
             lon = location.coordinate.longitude
-            Alamofire.request("https://api.openweathermap.org/data/2.5/weather?lat=\(lat)&lon=\(lon)&appid=\(apiKey)").responseJSON{
+            Alamofire.request("http://api.openweathermap.org/data/2.5/weather?lat=\(lat)&lon=\(lon)&appid=\(apiKey)&units=metric").responseJSON{
                 response in
                 self.activityIndicator?.stopAnimating()
                 if let responseStr = response.result.value{
@@ -67,18 +68,26 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                     let iconName = jsonWeather["icon"].stringValue
                     
                     self.locationLabel.text = jsonResponse["name"].stringValue
+                    self.conditionImageView.image = UIImage(named: iconName)
                     self.conditionLabel.text = jsonWeather["main"].stringValue
-                    self.temperatureLabel.text = "\(Int(round(jsonTemp["temp"].doubleValue))"
+                    self.temperatureLabel.text = "\(Int(round(jsonTemp["temp"].doubleValue)))"
+                    let date = Date()
+                    let dateFormatter = DateFormatter()
+                    dateFormatter.dateFormat = "EEEE"
+                    self.dayLabel.text = dateFormatter.string(from: date)
                 }
                 
             }
             print(location.coordinate)
+            self.locationManage.stopUpdatingLocation()
 //            self.textLabel.text = "latitude \(location.coordinate.latitude) longitude \(location.coordinate.longitude)"
         }
         
     }
     private func locationManage(manager: CLLocationManager!, didFailWithError error: Error!) {
         print(error)
+        self.locationLabel.text = "Fail"
+        self.activityIndicator?.stopAnimating()
     }
     
 }
