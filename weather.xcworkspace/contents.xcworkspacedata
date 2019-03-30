@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:ViewController.swift">
+   </FileRef>
+   <FileRef
+      location = "group:ViewController.xib">
+   </FileRef>
+   <FileRef
       location = "group:weather.xcodeproj">
    </FileRef>
    <FileRef

@@ -2,7 +2,7 @@
 //  TableViewController.swift
 //  weather
 //
-//  Created by RuotongX on 2019/3/24.
+//  Created by RuotongX on 2019/3/25.
 //  Copyright © 2019 RuotongX. All rights reserved.
 //
 
@@ -10,9 +10,12 @@ import UIKit
 
 class TableViewController: UITableViewController {
 
+    @IBOutlet weak var weatherTablrViewController: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

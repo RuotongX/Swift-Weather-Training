@@ -10,7 +10,7 @@ import UIKit
 
 class TableCellTableViewCell{
     @IBOutlet weak var WeatherImage: UIImageView!
-    
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var tempLabel: UILabel!
 }
