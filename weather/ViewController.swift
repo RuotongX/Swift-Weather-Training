@@ -28,11 +28,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     var lon = 174.111
     var activityIndicator : NVActivityIndicatorView?
     let locationManage = CLLocationManager()
+    var locate = location()
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let indicatorSize: CGFloat = 70
         let indicatorFrame = CGRect(x: (view.frame.width-indicatorSize)/2,y:(view.frame.width-indicatorSize)/2,width:indicatorSize,height:indicatorSize)
         activityIndicator = NVActivityIndicatorView(frame: indicatorFrame, type: .lineScale, color: UIColor.white, padding: 20.0)
@@ -49,6 +50,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             self.locationManage.distanceFilter = kCLLocationAccuracyKilometer
             locationManage.startUpdatingLocation()
         }
+        let sVC = secondViewController()
+        sVC.locate = self.locate
     }
     func locationManager(_ manager:CLLocationManager,didUpdateLocations locations:[CLLocation]){
         print("get location")
@@ -75,6 +78,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                     let dateFormatter = DateFormatter()
                     dateFormatter.dateFormat = "EEEE"
                     self.dayLabel.text = dateFormatter.string(from: date)
+                    let loca = jsonResponse["name"].stringValue
+                    let id = jsonResponse["id"].stringValue
+                    self.locate.name = loca
+                    self.locate.id = id
+                    self.locate.lat = self.lat
+                    self.locate.long = self.lon
                 }
                 
             }
@@ -89,6 +98,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         self.locationLabel.text = "Fail"
         self.activityIndicator?.stopAnimating()
     }
+  
     
 }
 

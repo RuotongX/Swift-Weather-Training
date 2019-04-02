@@ -26,7 +26,7 @@
                   moduleName = "weather"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Applications/weather_test/weather/weather/TableViewController.swift"
-                  timestampString = "575335732.2905231"
+                  timestampString = "575908278.033891"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -41,7 +41,7 @@
                   moduleName = "weather"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Applications/weather_test/weather/weather/TableViewController.swift"
-                  timestampString = "575335732.293049"
+                  timestampString = "575908278.0365"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
@@ -56,7 +56,7 @@
                   moduleName = "weather"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Applications/weather_test/weather/weather/TableViewController.swift"
-                  timestampString = "575335732.295596"
+                  timestampString = "575908278.038713"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -71,7 +71,7 @@
                   moduleName = "weather"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Applications/weather_test/weather/weather/TableViewController.swift"
-                  timestampString = "575335732.298384"
+                  timestampString = "575908278.04058"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
@@ -86,7 +86,7 @@
                   moduleName = "weather"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Applications/weather_test/weather/weather/TableViewController.swift"
-                  timestampString = "575335732.301247"
+                  timestampString = "575908278.042207"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -101,7 +101,7 @@
                   moduleName = "weather"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Applications/weather_test/weather/weather/TableViewController.swift"
-                  timestampString = "575335732.3036"
+                  timestampString = "575908278.044759"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
@@ -116,7 +116,7 @@
                   moduleName = "weather"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Applications/weather_test/weather/weather/TableViewController.swift"
-                  timestampString = "575335732.3057441"
+                  timestampString = "575908278.047266"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -155,38 +155,6 @@
             startingLineNumber = "16"
             endingLineNumber = "16"
             landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "weather/secondViewController.swift"
-            timestampString = "575335732.280843"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "weather/secondViewController.swift"
-            timestampString = "575335732.281203"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
