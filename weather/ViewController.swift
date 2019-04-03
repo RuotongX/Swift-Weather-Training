@@ -50,8 +50,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             self.locationManage.distanceFilter = kCLLocationAccuracyKilometer
             locationManage.startUpdatingLocation()
         }
-        let sVC = secondViewController()
-        sVC.locate = self.locate
     }
     func locationManager(_ manager:CLLocationManager,didUpdateLocations locations:[CLLocation]){
         print("get location")
@@ -84,6 +82,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                     self.locate.id = id
                     self.locate.lat = self.lat
                     self.locate.long = self.lon
+                    UserDefaults().setValue(id, forKey: "locate")
+                    UserDefaults().setValue(loca, forKey: "name")
                 }
                 
             }

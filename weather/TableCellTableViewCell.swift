@@ -9,10 +9,11 @@
 import UIKit
 
 class TableCellTableViewCell: UITableViewCell{
-    @IBOutlet weak var WeatherImage: UIImageView!
-    @IBOutlet weak var locationLabel: UILabel!
-    @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var tempLabel: UILabel!
+
+    @IBOutlet var locationLabel: UILabel!
+    @IBOutlet var dateLabel: UILabel!
+    @IBOutlet var WeatherImage: UIImageView!
+    @IBOutlet var tempLabel: UILabel!
     
     func setWeatherf(weatherf:weatherf){
         WeatherImage.image = weatherf.weatherImage

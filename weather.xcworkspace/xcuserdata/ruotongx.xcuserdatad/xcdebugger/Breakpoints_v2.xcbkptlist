@@ -10,120 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "weather/TableViewController.swift"
-            timestampString = "575335732.2806619"
+            timestampString = "575968563.1528879"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "11"
             endingLineNumber = "11"
             landmarkName = "TableViewController"
             landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "weather.TableViewController.__allocating_init(style: __C.UITableViewStyle) -&gt; weather.TableViewController"
-                  moduleName = "weather"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Applications/weather_test/weather/weather/TableViewController.swift"
-                  timestampString = "575908278.033891"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "weather.TableViewController.init(style: __C.UITableViewStyle) -&gt; weather.TableViewController"
-                  moduleName = "weather"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Applications/weather_test/weather/weather/TableViewController.swift"
-                  timestampString = "575908278.0365"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "35">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "weather.TableViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; weather.TableViewController"
-                  moduleName = "weather"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Applications/weather_test/weather/weather/TableViewController.swift"
-                  timestampString = "575908278.038713"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "weather.TableViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; weather.TableViewController"
-                  moduleName = "weather"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Applications/weather_test/weather/weather/TableViewController.swift"
-                  timestampString = "575908278.04058"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "57">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "weather.TableViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;weather.TableViewController&gt;"
-                  moduleName = "weather"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Applications/weather_test/weather/weather/TableViewController.swift"
-                  timestampString = "575908278.042207"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "weather.TableViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;weather.TableViewController&gt;"
-                  moduleName = "weather"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Applications/weather_test/weather/weather/TableViewController.swift"
-                  timestampString = "575908278.044759"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "50">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "weather.TableViewController.__deallocating_deinit"
-                  moduleName = "weather"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Applications/weather_test/weather/weather/TableViewController.swift"
-                  timestampString = "575908278.047266"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "16">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -133,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "weather/TableViewController.swift"
-            timestampString = "575335732.280736"
+            timestampString = "575968563.152954"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "18"
@@ -149,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "weather/TableViewController.swift"
-            timestampString = "575335732.280791"
+            timestampString = "575968563.153001"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
