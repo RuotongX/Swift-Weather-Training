@@ -13,13 +13,16 @@ import SwiftyJSON
 
 class secondViewController: UIViewController{
     @IBOutlet var secondTable: UITableView!
+    @IBOutlet weak var locationLabel: UILabel!
     var locate = location()
     var weathers: [weatherf] = [];
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         self.locate.id = UserDefaults().string(forKey:"locate")!
         self.locate.name = UserDefaults().string(forKey:"name")!
+        locationLabel.text = self.locate.name
         getWeathers()
     }
     
@@ -36,8 +39,17 @@ class secondViewController: UIViewController{
                     let jsonDay = jsonResponse["list"].array![j]
                     let jsonWeather = jsonDay["weather"].array![0]
                     let jsonTemp = jsonDay["main"]
-                    let iconName = jsonWeather["icon"].stringValue
-                    
+                    var iconName = jsonWeather["icon"].stringValue
+                    let tem = (iconName as NSString).intValue
+                    if tem>3,tem<9{
+                        iconName = "03n"
+                    }
+                    if tem == 12{
+                        iconName = "03n"
+                    }
+                    if tem>13{
+                        iconName = "03n"
+                    }
                     let name = self.locate.name
                     let image = UIImage(named: iconName)
                     let temp = "\(Int(round(jsonTemp["temp"].doubleValue))-273)"
@@ -45,9 +57,9 @@ class secondViewController: UIViewController{
                     print(date)
                     let forcast = weatherf()
                     forcast.locationLabel = name
-                    forcast.weatherImage = image!;
+                    forcast.weatherImage = image!
                     forcast.tempLabel = temp
-                    forcast.dateLabel = date
+                    forcast.dateLabel = String(date.prefix(10))
                     self.weathers.append(forcast)
                     DispatchQueue.main.async {
                         self.secondTable.reloadData()
@@ -67,10 +79,11 @@ extension  secondViewController: UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let weatherf = weathers[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TableCellTableViewCell") as! TableCellTableViewCell
+       let cell = tableView.dequeueReusableCell(withIdentifier: "weathercell", for: indexPath) as! weathercell
         cell.setWeatherf(weatherf: weatherf)
         return cell
     }
     
     
 }
+

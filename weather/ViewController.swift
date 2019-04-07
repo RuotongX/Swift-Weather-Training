@@ -66,8 +66,18 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                     let jsonResponse = JSON(responseStr)
                     let jsonWeather = jsonResponse["weather"].array![0]
                     let jsonTemp = jsonResponse["main"]
-                    let iconName = jsonWeather["icon"].stringValue
-                    
+                    var iconName = jsonWeather["icon"].stringValue
+                    let tem = (iconName as NSString).intValue
+                    if tem>3,tem<9{
+                        iconName = "03n"
+                    }
+                    if tem == 12{
+                        iconName = "03n"
+                    }
+                    if tem>13{
+                        iconName = "03n"
+                    }
+                        
                     self.locationLabel.text = jsonResponse["name"].stringValue
                     self.conditionImageView.image = UIImage(named: iconName)
                     self.conditionLabel.text = jsonWeather["main"].stringValue
